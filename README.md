@@ -42,7 +42,7 @@ end
 ```
 application.rb
 ```ruby
-  config.sparkpost_mailer.default_url_options = { :host => "buildingrenewal.org" }
+  config.sparkpost_mailer.default_url_options = { :host => "somehost.com" }
 ```
 notification_mailer.rb
 ```ruby
