@@ -8,7 +8,7 @@ describe SparkPostMailer::PayloadMailer do
       {
       recipients: [{ address: { email: 'email@email.com' } }],
       content: {
-        from: "no-reply@buildingrenewal.org",
+        from: "from_email@email.email",
         subject: "A message from Testy McTesterson",
         template_id: 'template'
       },
