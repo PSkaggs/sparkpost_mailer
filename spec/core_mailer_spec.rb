@@ -1,5 +1,6 @@
 require "spec_helper"
 require 'base64'
+#This is all from mandrill_mailer
 
 describe SparkPostMailer::CoreMailer do
   subject(:core_mailer) { described_class }
@@ -17,8 +18,8 @@ describe SparkPostMailer::CoreMailer do
     subject { mailer.send(:course_url) }
 
     context 'Rails is defined (Rails app)' do
-      let(:url) { '/courses/1' }
-      let(:host) { 'codeschool.com' }
+      let(:url) { '/fake_url' }
+      let(:host) { 'fake_host.com' }
       let(:router) { Rails.application.routes.url_helpers }
 
       before do
@@ -58,7 +59,7 @@ describe SparkPostMailer::CoreMailer do
 
     context 'Rails exists' do
       let(:image) { 'image.png' }
-      let(:host) { 'codeschool.com' }
+      let(:host) { 'fake_host.com' }
       let(:router) { Rails.application.routes.url_helpers }
 
       before do
